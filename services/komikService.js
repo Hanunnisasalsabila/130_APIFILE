@@ -6,9 +6,9 @@ async function createKomik(database, komikData) {
   }
 
   const newKomik = await database.Komik.create({
-    title,
-    description,
-    author,
+    judul,
+    deskripsi,
+    penulis,
     imageType: imageType || null,
     imageName: imageName || null,
     imageData: imageData || null,
